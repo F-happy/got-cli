@@ -1,0 +1,34 @@
+import React, { PropTypes } from 'react';
+import { View, Text } from 'react-native';
+import RNPlus, { PView } from 'rnplus';
+import style from './style';
+
+
+export default class @name@ extends PView {
+
+  static reduxPlugin = {
+    mapStateToProps: [],
+    mapDispatchToProps: {},
+  };
+
+  constructor(props) {
+    super(props);
+  }
+
+  bindEvents = {
+    actived() {
+    },
+    deactived() {
+    },
+  };
+
+  render() {
+    return (
+      <All style={style.main} barStyle="default">
+        <View>
+          <Text>@@name@@</Text>
+        </View>
+      </All>
+    );
+  }
+}
