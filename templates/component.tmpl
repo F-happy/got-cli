@@ -1,0 +1,32 @@
+import React, { PropTypes } from 'react';
+import { View, Text } from 'react-native';
+import RNPlus, { PComponent } from 'rnplus';
+import style from './style';
+
+
+export default class @name@ extends PComponent {
+
+  static reduxPlugin = {
+    mapStateToProps: [],
+    mapDispatchToProps: {},
+  };
+
+  constructor(props) {
+    super(props);
+  }
+
+  bindEvents = {
+    actived() {
+    },
+    deactived() {
+    },
+  };
+
+  render() {
+    return (
+      <View>
+        <Text>@@name@@</Text>
+      </View>
+    );
+  }
+}
