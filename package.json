@@ -1,5 +1,5 @@
 {
-  "name": "got-cli",
+  "name": "got-template-cli",
   "version": "0.1.0",
   "description": "got create temp file",
   "main": "index.js",
