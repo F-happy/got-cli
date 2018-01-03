@@ -112,6 +112,12 @@ function createComponent(name, dir) {
             task.src(`${__dirname}/templates/style.tmpl`)
                 .pipe(renamePlugin('style.js'))
                 .pipe(task.dest(outDir));
+            task.src(`${__dirname}/templates/index.tmpl`)
+                .pipe(replacePlugin({
+                    '@name@': toUpperCase(name),
+                }))
+                .pipe(renamePlugin('index.js'))
+                .pipe(task.dest(outDir));
             console.log('新组件创建完成');
         }
     });
