@@ -1,6 +1,6 @@
 {
   "name": "got-template-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "got create temp file",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,9 @@
     "got",
     "cli"
   ],
+  "bin": {
+    "got-cli": "./index.js"
+  },
   "author": "huixiang",
   "license": "MIT",
   "bugs": {
